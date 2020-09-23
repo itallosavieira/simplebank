@@ -12,7 +12,19 @@ export class Account{
     /* 
     #####   Account ACCESSORS   #####
     */
-    
+    set customer(newValue) {
+        if (newValue instanceof Customer) {
+            this._customer = newValue;
+        }
+    }
+
+    get customer() {
+        return this._customer;
+    }
+
+    get balance() {
+        return this._balance;
+    }
     
     
     /* 
